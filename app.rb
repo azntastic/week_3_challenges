@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "Homepage"
+  "Sup dood"
 end
 
 get '/secret' do
@@ -17,9 +17,7 @@ get '/location' do
 end
 
 get '/cat' do
-"<div>
-  <img style='border: 5px dotted red' src='http://bit.ly/1eze8aE'/>
-</div>"
+  erb(:index)
 end
 
 set :session_secret, 'super secret'
